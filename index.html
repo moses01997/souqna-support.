@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082A5E">
+  <meta name="description" content="Official support center for SOUQNA marketplace.">
+  <title>SOUQNA | Support Center</title>
+  <style>
+    :root {
+      --navy: #082A5E;
+      --blue: #1466C3;
+      --gold: #FFBE32;
+      --bg: #F4F7FC;
+      --text: #172B4D;
+      --muted: #60718C;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #061D45, #1264C0);
+      color: white;
+      text-align: center;
+      padding: 65px 20px 75px;
+    }
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .accent {
+      width: 65px;
+      height: 5px;
+      border-radius: 5px;
+      background: var(--gold);
+      margin: 16px auto;
+    }
+    header h1 { font-size: 26px; margin: 20px 0 8px; }
+    header p { opacity: .88; margin: 0; }
+    .container {
+      max-width: 850px;
+      margin: -35px auto 50px;
+      padding: 0 18px;
+      position: relative;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 25px rgba(8,42,94,.07);
+    }
+    h2 { color: var(--navy); margin-top: 0; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    button {
+      background: white;
+      color: var(--navy);
+      border: 1px solid #D9E4F3;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.active {
+      background: var(--navy);
+      color: white;
+    }
+    .faq {
+      padding: 14px 0;
+      border-bottom: 1px solid #E7ECF4;
+    }
+    .faq:last-child { border: none; }
+    .faq strong { color: var(--navy); }
+    .faq p { margin: 5px 0 0; color: var(--muted); }
+    .contact {
+      background: #EAF3FF;
+      border-radius: 12px;
+      padding: 18px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px;
+      font-size: 13px;
+    }
+    [hidden] { display: none !important; }
+    @media (max-width: 600px) {
+      header { padding: 45px 16px 65px; }
+      .logo { font-size: 38px; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SOUQNA</div>
+  <div class="accent"></div>
+  <h1 id="heading">Support Center</h1>
+  <p id="subtitle">We're here to help you.</p>
+</header>
+
+<main class="container">
+  <nav class="lang-switch" aria-label="Language">
+    <button class="active" data-lang="en">English</button>
+    <button data-lang="ar">العربية</button>
+    <button data-lang="fr">Français</button>
+  </nav>
+
+  <section class="card">
+    <h2 id="aboutTitle">About SOUQNA</h2>
+    <p id="aboutText">
+      SOUQNA is a classifieds marketplace where users
+      can browse listings, post ads, and connect with
+      buyers and sellers.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 id="faqTitle">Frequently Asked Questions</h2>
+    <div id="faqContent"></div>
+  </section>
+
+  <section class="card">
+    <h2 id="contactTitle">Contact Support</h2>
+    <div class="contact">
+      <p id="contactText">
+        Need help with your account, listings, or a
+        technical issue? Contact our support team.
+      </p>
+      <p id="contactInstruction">
+        Please include a description of the issue
+        and your app version when contacting support.
+      </p>
+      <p id="contactEmail">
+        Support email: To be added before publication.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  ©️ 2026 SOUQNA. All rights reserved.
+</footer>
+
+<script>
+  const content = {
+    en: {
+      heading: "Support Center",
+      subtitle: "We're here to help you.",
+      aboutTitle: "About SOUQNA",
+      aboutText: "SOUQNA is a classifieds marketplace where users can browse listings, post ads, and connect with buyers and sellers.",
+      faqTitle: "Frequently Asked Questions",
+      contactTitle: "Contact Support",
+      contactText: "Need help with your account, listings, or a technical issue? Contact our support team.",
+      contactInstruction: "Please include a description of the issue and your app version when contacting support.",
+      contactEmail: "Support email: To be added before publication.",
+      faq: [
+        ["How do I post an ad?", "Sign in, tap the plus (+) button, complete the required information, and publish your listing."],
+        ["Can I browse without an account?", "Yes. You can explore public listings without signing in."],
+        ["How can I contact a seller?", "Open a listing and use the available contact option."],
+        ["How do I manage my listings?", "Sign in and visit your account to manage your ads."],
+        ["How can I report a problem?", "Contact our support team with the details of your issue."]
+      ]
+    },
+    ar: {
+      heading: "مركز الدعم",
+      subtitle: "نحن هنا لمساعدتك.",
+      aboutTitle: "عن سوقنا",
+      aboutText: "سوقنا تطبيق للإعلانات المبوبة يتيح للمستخدمين تصفح الإعلانات ونشرها والتواصل مع البائعين والمشترين.",
+      faqTitle: "الأسئلة الشائعة",
+      contactTitle: "تواصل مع الدعم",
+      contactText: "هل تحتاج مساعدة في حسابك أو إعلاناتك أو تواجه مشكلة تقنية؟ تواصل مع فريق الدعم.",
+      contactInstruction: "يرجى توضيح المشكلة وإرفاق إصدار التطبيق عند التواصل.",
+      contactEmail: "البريد الإلكتروني للدعم: سيُضاف قبل النشر.",
+      faq: [
+        ["كيف أنشر إعلانًا؟", "سجل الدخول واضغط زر الإضافة (+)، ثم أكمل البيانات المطلوبة وانشر الإعلان."],
+        ["هل يمكنني التصفح دون حساب؟", "نعم، يمكنك تصفح الإعلانات العامة دون تسجيل الدخول."],
+        ["كيف أتواصل مع البائع؟", "افتح الإعلان واستخدم وسيلة التواصل المتاحة."],
+        ["كيف أدير إعلاناتي؟", "سجل الدخول وانتقل إلى حسابك لإدارة إعلاناتك."],
+        ["كيف أبلغ عن مشكلة؟", "تواصل مع فريق الدعم وأرسل تفاصيل المشكلة."]
+      ]
+    },
+    fr: {
+      heading: "Centre d'assistance",
+      subtitle: "Nous sommes là pour vous aider.",
+      aboutTitle: "À propos de SOUQNA",
+      aboutText: "SOUQNA est une plateforme de petites annonces permettant de consulter et publier des annonces et de contacter des acheteurs et des vendeurs.",
+      faqTitle: "Questions fréquentes",
+      contactTitle: "Contacter l'assistance",
+      contactText: "Besoin d'aide avec votre compte, vos annonces ou un problème technique ? Contactez notre équipe.",
+      contactInstruction: "Veuillez décrire votre problème et préciser la version de l'application.",
+      contactEmail: "E-mail d'assistance : à ajouter avant publication.",
+      faq: [
+        ["Comment publier une annonce ?", "Connectez-vous, appuyez sur le bouton (+), remplissez les informations et publiez votre annonce."],
+        ["Puis-je consulter les annonces sans compte ?", "Oui, vous pouvez consulter les annonces publiques sans connexion."],
+        ["Comment contacter un vendeur ?", "Ouvrez une annonce et utilisez l'option de contact disponible."],
+        ["Comment gérer mes annonces ?", "Connectez-vous et accédez à votre compte pour gérer vos annonces."],
+        ["Comment signaler un problème ?", "Contactez notre équipe d'assistance en décrivant le problème."]
+      ]
+    }
+  };
+
+  function setLanguage(lang) {
+    const data = content[lang];
+    document.documentElement.lang = lang;
+    document.documentElement.dir =
+      lang === "ar" ? "rtl" : "ltr";
+
+    const ids = [
+      "heading", "subtitle", "aboutTitle", "aboutText",
+      "faqTitle", "contactTitle", "contactText",
+      "contactInstruction", "contactEmail"
+    ];
+
+    ids.forEach(id => {
+      document.getElementById(id).textContent = data[id];
+    });
+
+    const faqContainer = document.getElementById("faqContent");
+    faqContainer.replaceChildren();
+
+    data.faq.forEach(([question, answer]) => {
+      const item = document.createElement("div");
+      item.className = "faq";
+
+      const title = document.createElement("strong");
+      title.textContent = question;
+
+      const description = document.createElement("p");
+      description.textContent = answer;
+
+      item.append(title, description);
+      faqContainer.appendChild(item);
+    });
+
+    document.querySelectorAll("[data-lang]").forEach(button => {
+      button.classList.toggle(
+        "active", button.dataset.lang === lang
+      );
+    });
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(button => {
+    button.addEventListener("click", () => {
+      setLanguage(button.dataset.lang);
+    });
+  });
+
+  setLanguage("en");
+</script>
+</body>
+</html>
