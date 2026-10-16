@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082A5E">
+  <meta name="description" content="SOUQNA Marketplace Privacy Policy">
+  <title>SOUQNA | Privacy Policy</title>
+  <style>
+    :root {
+      --navy: #082A5E;
+      --blue: #1466C3;
+      --gold: #FFBE32;
+      --bg: #F4F7FC;
+      --text: #172B4D;
+      --muted: #60718C;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #061D45, #1264C0);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 75px;
+    }
+    .logo {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .accent {
+      width: 65px;
+      height: 5px;
+      background: var(--gold);
+      border-radius: 5px;
+      margin: 16px auto;
+    }
+    header h1 { margin: 15px 0 5px; }
+    header p { margin: 0; opacity: .9; }
+    main {
+      max-width: 850px;
+      margin: -35px auto 40px;
+      padding: 0 18px;
+      position: relative;
+    }
+    .languages {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+    button {
+      background: white;
+      color: var(--navy);
+      border: 1px solid #D9E4F3;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.active {
+      background: var(--navy);
+      color: white;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 6px 25px rgba(8,42,94,.07);
+      margin-bottom: 18px;
+    }
+    h2 {
+      color: var(--navy);
+      margin-top: 0;
+      font-size: 21px;
+    }
+    p { margin: 0; }
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 45px 16px 65px; }
+      .logo { font-size: 38px; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SOUQNA</div>
+  <div class="accent"></div>
+  <h1 id="heading">Privacy Policy</h1>
+  <p id="subtitle">Your privacy matters to us.</p>
+</header>
+
+<main>
+  <nav class="languages" aria-label="Language">
+    <button data-lang="en" class="active">English</button>
+    <button data-lang="ar">العربية</button>
+    <button data-lang="fr">Français</button>
+  </nav>
+
+  <div id="sections"></div>
+</main>
+
+<footer>©️ 2026 SOUQNA. All rights reserved.</footer>
+
+<script>
+const content = {
+  en: {
+    heading: "Privacy Policy",
+    subtitle: "Your privacy matters to us.",
+    sections: [
+      ["Introduction",
+       "SOUQNA is a classifieds marketplace that allows users to browse advertisements, publish listings, and communicate with buyers and sellers. This policy explains how personal information is handled."],
+
+      ["Information We Collect",
+       "Depending on how you use SOUQNA, information may include account credentials, email address, profile name, phone number, city, advertisement details, uploaded images, messages, and information provided when contacting support."],
+
+      ["How We Use Information",
+       "Information is used to operate the marketplace, authenticate accounts, publish advertisements, enable communication, manage user profiles, provide support, and maintain the security and functionality of the service."],
+
+      ["Public Listings",
+       "Information you choose to publish in advertisements, including listing descriptions, images, city, and contact details, may be visible to other users. Avoid publishing sensitive personal information."],
+
+      ["Data Storage and Service Providers",
+       "SOUQNA uses Supabase for application backend services, including authentication, database storage, and file storage. Information may be processed by service providers supporting the operation of the application."],
+
+      ["Data Sharing",
+       "Listing information and contact details you choose to publish may be accessible to other marketplace users. Information may also be processed by service providers necessary to operate the application or disclosed where legally required."],
+
+      ["Data Security",
+       "We take reasonable measures to protect user information. However, no internet-based service or electronic storage system can guarantee absolute security."],
+
+      ["Data Retention and Account Deletion",
+       "Users can request deletion of their accounts and associated personal information through the account deletion feature, where available, or by contacting support. Certain information may be retained when required by law or for legitimate security and dispute-resolution purposes. The scope of automatic deletion depends on the application's implemented deletion process."],
+
+      ["Your Choices",
+       "Users may browse public advertisements without signing in. Registered users can manage information available through their account and contact support regarding privacy or deletion requests."],
+
+      ["Children's Privacy",
+       "SOUQNA is a general classifieds marketplace and is not specifically designed for children. Parents and guardians should supervise minors using online marketplace services."],
+
+      ["Changes to This Policy",
+       "We may update this Privacy Policy when our services or privacy practices change. Updates will be published on this page."],
+
+      ["Contact Us",
+       "For privacy questions, account deletion requests, or support, contact: supportsouqna@gmail.com"]
+    ]
+  },
+
+  ar: {
+    heading: "سياسة الخصوصية",
+    subtitle: "خصوصيتك تهمنا.",
+    sections: [
+      ["مقدمة",
+       "سوقنا منصة للإعلانات المبوبة تتيح للمستخدمين تصفح الإعلانات ونشرها والتواصل مع البائعين والمشترين. توضح هذه السياسة كيفية التعامل مع المعلومات الشخصية."],
+
+      ["المعلومات التي نجمعها",
+       "بحسب استخدامك للتطبيق، قد تشمل المعلومات بيانات تسجيل الحساب والبريد الإلكتروني والاسم ورقم الهاتف والمدينة وتفاصيل الإعلانات والصور المرفوعة والرسائل والمعلومات المقدمة عند التواصل مع الدعم."],
+
+      ["كيفية استخدام المعلومات",
+       "نستخدم المعلومات لتشغيل المنصة والتحقق من الحسابات ونشر الإعلانات وتمكين التواصل بين المستخدمين وإدارة الملفات الشخصية وتقديم الدعم والمحافظة على أمن الخدمة وعملها."],
+
+      ["الإعلانات العامة",
+       "قد تظهر المعلومات التي تختار نشرها في إعلاناتك للمستخدمين الآخرين، بما في ذلك الوصف والصور والمدينة وبيانات التواصل. ننصح بعدم نشر معلومات شخصية حساسة."],
+
+      ["تخزين البيانات ومقدمو الخدمات",
+       "يستخدم سوقنا خدمة Supabase لتشغيل الخدمات الخلفية للتطبيق، بما في ذلك المصادقة وقاعدة البيانات وتخزين الملفات. وقد تعالج الجهات المقدمة للخدمات المعلومات اللازمة لتشغيل التطبيق."],
+
+      ["مشاركة المعلومات",
+       "قد يتمكن المستخدمون الآخرون من الاطلاع على معلومات الإعلانات وبيانات التواصل التي تختار نشرها. كما قد تُعالج البيانات بواسطة مقدمي الخدمات الضروريين لتشغيل التطبيق أو يتم الإفصاح عنها عند وجود التزام قانوني."],
+
+      ["حماية المعلومات",
+       "نتخذ إجراءات معقولة لحماية معلومات المستخدمين، لكن لا توجد خدمة إلكترونية أو وسيلة تخزين تضمن الأمان المطلق."],
+
+      ["الاحتفاظ بالبيانات وحذف الحساب",
+       "يمكن للمستخدم طلب حذف حسابه والمعلومات الشخصية المرتبطة به من خلال ميزة حذف الحساب عند توفرها أو بالتواصل مع الدعم. وقد يتم الاحتفاظ ببعض المعلومات إذا تطلب القانون ذلك أو لأغراض أمنية مشروعة أو تسوية النزاعات. ويعتمد نطاق الحذف التلقائي على آلية الحذف المطبقة داخل التطبيق."],
+
+      ["خيارات المستخدم",
+       "يمكن تصفح الإعلانات العامة دون تسجيل الدخول. ويمكن للمستخدم المسجل إدارة المعلومات المتاحة من خلال حسابه والتواصل مع الدعم بشأن الخصوصية أو طلبات الحذف."],
+
+      ["خصوصية الأطفال",
+       "سوقنا منصة عامة للإعلانات المبوبة وليست مصممة خصيصًا للأطفال. ينبغي على أولياء الأمور الإشراف على استخدام القاصرين لخدمات الأسواق الإلكترونية."],
+
+      ["التغييرات على السياسة",
+       "قد نقوم بتحديث سياسة الخصوصية عند تغيير خدماتنا أو ممارسات التعامل مع البيانات. وسيتم نشر التحديثات في هذه الصفحة."],
+
+      ["التواصل معنا",
+       "للاستفسارات المتعلقة بالخصوصية أو طلبات حذف الحساب أو الدعم، يرجى التواصل عبر البريد الإلكتروني: supportsouqna@gmail.com"]
+    ]
+  },
+
+  fr: {
+    heading: "Politique de confidentialité",
+    subtitle: "Votre confidentialité est importante.",
+    sections: [
+      ["Introduction",
+       "SOUQNA est une plateforme de petites annonces permettant de consulter et publier des annonces et de communiquer avec des acheteurs et des vendeurs. Cette politique explique le traitement des informations personnelles."],
+
+      ["Informations collectées",
+       "Selon votre utilisation, les informations peuvent comprendre les identifiants de compte, l'adresse e-mail, le nom, le numéro de téléphone, la ville, les annonces, les images téléchargées, les messages et les informations communiquées au support."],
+
+      ["Utilisation des informations",
+       "Les informations servent à exploiter la plateforme, authentifier les comptes, publier des annonces, permettre les communications, gérer les profils, fournir une assistance et assurer la sécurité et le fonctionnement du service."],
+
+      ["Annonces publiques",
+       "Les informations que vous choisissez de publier, notamment les descriptions, images, villes et coordonnées, peuvent être visibles par d'autres utilisateurs. Évitez de publier des informations personnelles sensibles."],
+
+      ["Stockage et prestataires",
+       "SOUQNA utilise Supabase pour les services techniques, notamment l'authentification, la base de données et le stockage des fichiers. Les prestataires nécessaires au fonctionnement du service peuvent traiter certaines informations."],
+
+      ["Partage des informations",
+       "Les informations des annonces et les coordonnées que vous choisissez de publier peuvent être accessibles aux autres utilisateurs. Des prestataires nécessaires au fonctionnement de l'application peuvent également traiter des données, ou celles-ci peuvent être divulguées si la loi l'exige."],
+
+      ["Sécurité des données",
+       "Nous prenons des mesures raisonnables pour protéger les informations. Toutefois, aucun service Internet ni système de stockage électronique ne garantit une sécurité absolue."],
+
+      ["Conservation et suppression du compte",
+       "Les utilisateurs peuvent demander la suppression de leur compte et des informations personnelles associées via la fonction de suppression du compte, lorsqu'elle est disponible, ou en contactant l'assistance. Certaines informations peuvent être conservées lorsque la loi l'exige ou pour des raisons légitimes de sécurité ou de résolution des litiges. L'étendue de la suppression automatique dépend du mécanisme effectivement mis en œuvre."],
+
+      ["Vos choix",
+       "Les annonces publiques peuvent être consultées sans connexion. Les utilisateurs inscrits peuvent gérer les informations accessibles dans leur compte et contacter l'assistance pour les questions de confidentialité ou de suppression."],
+
+      ["Confidentialité des enfants",
+       "SOUQNA est une plateforme générale de petites annonces qui n'est pas spécifiquement destinée aux enfants. Les parents et responsables légaux doivent superviser l'utilisation des services par les mineurs."],
+
+      ["Modifications",
+       "Cette politique peut être mise à jour lorsque nos services ou pratiques évoluent. Les modifications seront publiées sur cette page."],
+
+      ["Nous contacter",
+       "Pour toute question relative à la confidentialité, demande de suppression ou assistance : supportsouqna@gmail.com"]
+    ]
+  }
+};
+
+function setLanguage(lang) {
+  const data = content[lang] || content.en;
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir =
+    lang === "ar" ? "rtl" : "ltr";
+
+  document.getElementById("heading").textContent = data.heading;
+  document.getElementById("subtitle").textContent = data.subtitle;
+
+  const container = document.getElementById("sections");
+  container.replaceChildren();
+
+  data.sections.forEach(([title, description]) => {
+    const section = document.createElement("section");
+    section.className = "card";
+
+    const heading = document.createElement("h2");
+    heading.textContent = title;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = description;
+
+    section.append(heading, paragraph);
+    container.appendChild(section);
+  });
+
+  document.querySelectorAll("[data-lang]").forEach(button => {
+    const active = button.dataset.lang === lang;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+document.querySelectorAll("[data-lang]").forEach(button => {
+  button.addEventListener("click", () => {
+    setLanguage(button.dataset.lang);
+  });
+});
+
+setLanguage("en");
+</script>
+
+</body>
+</html>
